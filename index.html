@@ -64,24 +64,26 @@
 		</section>
 		<section class="features">
 			<div class="container">
-				<h2 class="features-title">Features</h2>
-				<p class="features-text">
-					Our aim is to make it quick and easy for you to access your favourite websites. Your
-					bookmarks sync between your devices so you can access them on the go.
-				</p>
+				<div class="features-content">
+					<h2 class="features-title">Features</h2>
+					<p class="features-text">
+						Our aim is to make it quick and easy for you to access your favourite websites. Your
+						bookmarks sync between your devices so you can access them on the go.
+					</p>
+				</div>
 				<div class="features-menu">
-					<span class="features-option">Simple Bookmarking</span>
-					<span class="features-option">Speedy Searching</span>
-					<span class="features-option">Easy Sharing</span>
+					<span class="features-option" data-active="true" data-option="0">Simple Bookmarking</span>
+					<span class="features-option" data-active="false" data-option="1">Speedy Searching</span>
+					<span class="features-option" data-active="false" data-option="2">Easy Sharing</span>
 				</div>
 
-				<div class="features-tabs.container">
+				<div class="features-tabs container">
 					<!-- Tab 1 -->
-					<div class="features-tab">
+					<div class="features-tab" data-open="true">
 						<div class="features-image">
 							<img src="./images/illustration-features-tab-1.svg" alt="Simple Bookmarking" />
 						</div>
-						<div class="features-content">
+						<div class="features-tab-content">
 							<h3>Bookmark in one click</h3>
 							<p>
 								Organize your bookmarks however you like. Our simple drag-and-drop interface gives
@@ -91,11 +93,11 @@
 						</div>
 					</div>
 					<!-- Tab 2 -->
-					<div class="features-tab">
+					<div class="features-tab" data-open="false">
 						<div class="features-image">
 							<img src="./images/illustration-features-tab-2.svg" alt="Speed Search" />
 						</div>
-						<div class="features-content">
+						<div class="features-tab-content">
 							<h3>Intelligent search</h3>
 							<p>
 								Our powerful search feature will help you find saved sites in no time at all. No
@@ -105,11 +107,11 @@
 						</div>
 					</div>
 					<!-- Tab 3 -->
-					<div class="features-tab">
+					<div class="features-tab" data-open="false">
 						<div class="features-image">
 							<img src="./images/illustration-features-tab-3.svg" alt="Easy Sharing" />
 						</div>
-						<div class="features-content">
+						<div class="features-tab-content">
 							<h3>Share your bookmarks</h3>
 							<p>
 								Easily share your bookmarks and collections with others. Create a shareable link
