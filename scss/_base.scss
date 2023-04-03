@@ -2,6 +2,7 @@
 $soft-blue: hsl(231, 69%, 60%);
 $soft-red: hsl(0, 94%, 66%);
 $grayish-blue: hsl(229, 8%, 60%);
+$soft-grey: hsl(0, 0%, 96%);
 $very-dark-blue: hsl(229, 31%, 21%);
 $very-dark-blue-opacity: hsla(229, 31%, 21%, 0.9);
 $white: white;
@@ -27,4 +28,21 @@ a {
 img {
 	display: block;
 	max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+	color: $very-dark-blue;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 1.75rem;
+}
+
+p {
+	color: $grayish-blue;
+	font-size: 0.9rem;
+	line-height: 1.6;
 }
