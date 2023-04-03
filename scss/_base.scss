@@ -3,7 +3,28 @@ $soft-blue: hsl(231, 69%, 60%);
 $soft-red: hsl(0, 94%, 66%);
 $grayish-blue: hsl(229, 8%, 60%);
 $very-dark-blue: hsl(229, 31%, 21%);
+$very-dark-blue-opacity: hsla(229, 31%, 21%, 0.9);
+$white: white;
+$white-opacity: rgba(255, 255, 255, 0.4);
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 body {
 	font-family: "Rubik", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
