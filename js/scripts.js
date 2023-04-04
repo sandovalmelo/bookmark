@@ -29,7 +29,7 @@ function changeTab(option) {
 	});
 }
 
-featuresOption.forEach((option, index) => {
+featuresOption.forEach((option) => {
 	option.addEventListener("click", (event) => {
 		featuresOption.filter((wrongOption) => {
 			if (wrongOption !== event.target) {
@@ -37,6 +37,26 @@ featuresOption.forEach((option, index) => {
 			} else {
 				event.target.setAttribute("data-active", "true");
 				changeTab(+event.target.dataset.option);
+			}
+		});
+	});
+});
+
+// faq
+const questions = Array.from(document.querySelectorAll(".question"));
+const questionHeader = Array.from(document.querySelectorAll(".question-header"));
+
+questionHeader.forEach((question) => {
+	question.addEventListener("click", (event) => {
+		questions.filter((questionHeader, index) => {
+			if (index === +question.dataset.question) {
+				if (questionHeader.dataset.open === "true") {
+					questionHeader.setAttribute("data-open", "false");
+				} else {
+					questionHeader.setAttribute("data-open", "true");
+				}
+			} else {
+				questionHeader.setAttribute("data-open", "false");
 			}
 		});
 	});
