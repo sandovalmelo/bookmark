@@ -174,6 +174,9 @@ p {
   .features-image {
     padding: 0 1.5rem;
     margin-bottom: 2rem; }
+    .features-image img {
+      margin: 0 auto;
+      width: 100%; }
   .features-tab {
     margin-bottom: 2rem;
     display: none; }
@@ -225,5 +228,51 @@ p {
     font-weight: 500;
     font-size: 0.85rem;
     border-radius: 4px; }
+
+.faq {
+  padding: 0 1.5rem;
+  margin-bottom: 4rem; }
+  .faq-title {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .faq-text {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .faq .question {
+    border-bottom: solid 1px rgba(145, 148, 161, 0.3); }
+  .faq .question[data-open="true"] .answer {
+    display: block;
+    visibility: visible; }
+  .faq .question[data-open="true"] .arrow-up {
+    display: block; }
+  .faq .question[data-open="true"] .arrow-down {
+    display: none; }
+  .faq .question-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .faq .question-title {
+    padding: 1.5rem 0;
+    font-size: 0.9rem; }
+  .faq .answer {
+    margin-bottom: 1.5rem;
+    display: none;
+    visibility: none; }
+  .faq .arrow-up {
+    display: none; }
+  .faq .arrow-down {
+    display: block; }
+  .faq button {
+    background-color: #5368df;
+    border: none;
+    height: 2.75rem;
+    width: 6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+    margin: 2rem auto 0; }
 
 /*# sourceMappingURL=styles.css.map */
