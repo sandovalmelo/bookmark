@@ -61,3 +61,32 @@ questionHeader.forEach((question) => {
 		});
 	});
 });
+
+// form
+const contactForm = document.getElementById("contact-form");
+const emailInput = document.getElementById("email");
+
+function validateEmail(email) {
+	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+		return true;
+	}
+
+	return false;
+}
+
+contactForm.addEventListener("submit", (event) => {
+	event.preventDefault();
+	const emailIsValid = validateEmail(emailInput.value);
+
+	if (emailIsValid) {
+		contactForm.setAttribute("data-valid", "true");
+		emailInput.value = "";
+	} else {
+		contactForm.setAttribute("data-valid", "false");
+
+		setTimeout(() => {
+			contactForm.setAttribute("data-valid", "true");
+			emailInput.value = "";
+		}, 5000);
+	}
+});

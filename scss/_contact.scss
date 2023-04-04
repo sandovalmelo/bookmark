@@ -22,7 +22,7 @@
 		font-weight: 500;
 	}
 
-	form[data-invalid="true"] {
+	form[data-valid="false"] {
 		.input-container {
 			background-color: $soft-red;
 		}

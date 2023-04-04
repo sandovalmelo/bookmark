@@ -30,6 +30,9 @@ p {
   font-size: 0.9rem;
   line-height: 1.6; }
 
+button {
+  font-family: inherit; }
+
 @media (max-width: 899px) {
   .menu {
     padding: 1.5rem; }
@@ -292,13 +295,13 @@ p {
     line-height: 1.2;
     margin-bottom: 2rem;
     font-weight: 500; }
-  .contact form[data-invalid="true"] .input-container {
+  .contact form[data-valid="false"] .input-container {
     background-color: #fa5757; }
-  .contact form[data-invalid="true"] input {
+  .contact form[data-valid="false"] input {
     border: solid 2px #fa5757; }
-  .contact form[data-invalid="true"] img {
+  .contact form[data-valid="false"] img {
     display: block; }
-  .contact form[data-invalid="true"] p {
+  .contact form[data-valid="false"] p {
     display: block; }
   .contact input,
   .contact button {
