@@ -332,9 +332,26 @@ button {
     border: solid 2px transparent;
     color: inherit; }
   .contact button {
-    font-family: inherit;
     color: white;
     font-weight: 500;
     background-color: #fa5757; }
+
+.footer {
+  padding: 4rem 1.5rem;
+  background-color: #252b46;
+  color: white;
+  display: flex;
+  justify-content: center; }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    margin: 2rem 0; }
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; }
 
 /*# sourceMappingURL=styles.css.map */
