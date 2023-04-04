@@ -230,8 +230,12 @@
 			<div class="container">
 				<h2 class="contact-title">35,000+ already joined</h2>
 				<p class="contact-text">Stay up-to-date with what we’re doing</p>
-				<form class="contact-form">
-					<input type="email" name="email" id="email" placeholder="Enter your email adress" />
+				<form class="contact-form" data-invalid="true" novalidate>
+					<div class="input-container">
+						<input type="email" name="email" id="email" placeholder="Enter your email adress" />
+						<img src="./images/icon-error.svg" alt="Error Icon" />
+						<p>Whoops make, sure it's an email</p>
+					</div>
 					<button type="submit" class="contact-btn">Contact Us</button>
 				</form>
 			</div>
