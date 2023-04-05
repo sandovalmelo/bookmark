@@ -54,9 +54,7 @@
 @media (min-width: 900px) {
 	.download {
 		&-text {
-			max-width: 37.5rem;
-			margin-left: auto;
-			margin-right: auto;
+			@include text-width;
 		}
 
 		&-browsers {

@@ -96,9 +96,7 @@
 		}
 
 		&-text {
-			max-width: 37.5rem;
-			margin-left: auto;
-			margin-right: auto;
+			@include text-width;
 		}
 
 		&-option {

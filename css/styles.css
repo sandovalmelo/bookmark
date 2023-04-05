@@ -383,6 +383,17 @@ button {
     display: block;
     margin: 2rem auto 0; }
 
+@media (min-width: 900px) {
+  .faq-text {
+    max-width: 37.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .faq .questions-container {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .faq .question-title {
+    font-size: 1.1rem; } }
 .contact {
   background-color: #5368df;
   padding: 4rem 1.5rem;
