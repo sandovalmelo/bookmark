@@ -71,11 +71,7 @@
 
 	&-tab-content {
 		padding: 0 1.5rem;
-
-		h3,
-		p {
-			text-align: center;
-		}
+		text-align: center;
 
 		h3 {
 			margin-bottom: 1rem;
@@ -84,5 +80,68 @@
 
 	button {
 		display: none;
+	}
+}
+
+@media (min-width: 900px) {
+	.features {
+		&-menu {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			border-bottom: solid 1px $gray-opacity;
+			padding: 0;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&-text {
+			max-width: 37.5rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&-option {
+			border-bottom: none;
+			cursor: pointer;
+
+			&:first-of-type {
+				border-top: none;
+			}
+		}
+
+		.features-option[data-active="true"] {
+			&::after {
+				width: 100%;
+			}
+		}
+
+		&-tab-container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+		}
+
+		&-tab-content {
+			text-align: left;
+
+			p {
+				max-width: 25rem;
+			}
+		}
+
+		button {
+			margin-top: 1rem;
+			display: block;
+			text-align: center;
+
+			background-color: #5368df;
+			border: none;
+			height: 2.75rem;
+			width: 6rem;
+			border-radius: 4px;
+			font-weight: 600;
+			color: white;
+		}
 	}
 }
