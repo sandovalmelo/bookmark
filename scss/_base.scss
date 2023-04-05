@@ -51,6 +51,10 @@ p {
 
 button {
 	font-family: inherit;
+
+	@media (min-width: 900px) {
+		cursor: pointer;
+	}
 }
 
 .container {
