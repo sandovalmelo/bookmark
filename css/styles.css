@@ -452,6 +452,21 @@ button {
     font-weight: 500;
     background-color: #fa5757; }
 
+@media (min-width: 900px) {
+  .contact-title {
+    margin-bottom: 2rem; }
+  .contact-text {
+    font-size: 1.75rem;
+    max-width: 25.5rem;
+    margin-left: auto;
+    margin-right: auto; }
+  .contact .input-container {
+    display: inline-block;
+    max-width: 100%;
+    width: 18rem; }
+  .contact button {
+    display: inline-block;
+    max-width: 120px; } }
 .footer {
   padding: 4rem 1.5rem;
   background-color: #252b46;

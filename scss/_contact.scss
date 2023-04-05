@@ -84,3 +84,29 @@
 		background-color: $soft-red;
 	}
 }
+
+@media (min-width: 900px) {
+	.contact {
+		&-title {
+			margin-bottom: 2rem;
+		}
+
+		&-text {
+			font-size: 1.75rem;
+			max-width: 25.5rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.input-container {
+			display: inline-block;
+			max-width: 100%;
+			width: 18rem;
+		}
+
+		button {
+			display: inline-block;
+			max-width: 120px;
+		}
+	}
+}
