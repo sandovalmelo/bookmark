@@ -1,3 +1,14 @@
+.menu {
+	&-links {
+		.link,
+		.btn {
+			text-transform: uppercase;
+			font-size: 1rem;
+			letter-spacing: 3px;
+		}
+	}
+}
+
 @media (max-width: 899px) {
 	.menu {
 		padding: 1.5rem;
@@ -23,8 +34,6 @@
 			height: 100vh;
 			color: $white;
 			padding: 1.5rem;
-			font-size: 1.25rem;
-			text-transform: uppercase;
 			z-index: 100;
 
 			&-header {
@@ -60,6 +69,8 @@
 				padding: 0.5rem 0;
 				border-radius: 4px;
 				font-weight: 500;
+				background-color: transparent;
+				color: $white;
 			}
 		}
 
@@ -81,6 +92,44 @@
 
 		.menu-nav {
 			display: block;
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	.menu {
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 2rem 1.5rem;
+		}
+
+		.open-menu,
+		&-nav-header,
+		&-social-links {
+			display: none;
+			visibility: hidden;
+		}
+
+		&-links {
+			.link,
+			.btn {
+				font-size: 0.9rem;
+			}
+
+			.link {
+				margin-right: 2.5rem;
+			}
+
+			.btn {
+				background-color: $soft-red;
+				color: $white;
+				height: 2.5rem;
+				width: 7rem;
+				border: none;
+				border-radius: 4px;
+			}
 		}
 	}
 }
