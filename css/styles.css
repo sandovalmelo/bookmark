@@ -526,6 +526,8 @@ button {
     display: flex;
     justify-content: center;
     gap: 2rem; }
+    .footer-social svg {
+      fill: white; }
 
 @media (min-width: 900px) {
   .footer {
@@ -541,7 +543,12 @@ button {
     .footer-links {
       flex-direction: row;
       gap: 3rem; }
+      .footer-links span:hover {
+        color: #fa5757; }
     .footer-social {
-      margin-left: auto; } }
+      margin-left: auto; }
+      .footer-social svg:hover {
+        fill: #fa5757;
+        cursor: pointer; } }
 
 /*# sourceMappingURL=styles.css.map */
