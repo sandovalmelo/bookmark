@@ -272,6 +272,8 @@ button {
   .features-option {
     border-bottom: none;
     cursor: pointer; }
+    .features-option:hover {
+      color: #fa5757; }
     .features-option:first-of-type {
       border-top: none; }
   .features .features-option[data-active="true"]::after {
@@ -289,12 +291,15 @@ button {
     display: block;
     text-align: center;
     background-color: #5368df;
-    border: none;
+    border: solid 2px #5368df;
     height: 2.75rem;
     width: 6rem;
     border-radius: 4px;
     font-weight: 600;
-    color: white; } }
+    color: white; }
+    .features button:hover {
+      color: #5368df;
+      background-color: transparent; } }
 .download {
   padding: 0 1.5rem;
   margin-bottom: 4rem; }

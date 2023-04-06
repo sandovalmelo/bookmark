@@ -103,6 +103,10 @@
 			border-bottom: none;
 			cursor: pointer;
 
+			&:hover {
+				color: $soft-red;
+			}
+
 			&:first-of-type {
 				border-top: none;
 			}
@@ -133,13 +137,18 @@
 			display: block;
 			text-align: center;
 
-			background-color: #5368df;
-			border: none;
+			background-color: $soft-blue;
+			border: solid 2px $soft-blue;
 			height: 2.75rem;
 			width: 6rem;
 			border-radius: 4px;
 			font-weight: 600;
 			color: white;
+
+			&:hover {
+				color: $soft-blue;
+				background-color: transparent;
+			}
 		}
 	}
 }
