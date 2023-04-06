@@ -4,6 +4,7 @@
 	color: $white;
 	display: flex;
 	justify-content: center;
+	position: relative;
 
 	&-links {
 		display: flex;
@@ -22,6 +23,17 @@
 		svg {
 			fill: $white;
 		}
+	}
+
+	button {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 2rem;
+		background-color: $soft-blue;
+		border: solid 2px $soft-blue;
+		padding: 0.5rem;
+		border-radius: 4px;
 	}
 }
 
