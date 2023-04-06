@@ -393,7 +393,7 @@ button {
     display: block; }
   .faq button {
     background-color: #5368df;
-    border: none;
+    border: solid 2px #5368df;
     height: 2.75rem;
     width: 6rem;
     border-radius: 4px;
@@ -413,8 +413,17 @@ button {
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto; }
+  .faq .question:hover {
+    cursor: pointer; }
+  .faq .question:hover .question-title {
+    color: #fa5757; }
+  .faq .question:first-of-type {
+    border-top: solid 1px rgba(145, 148, 161, 0.3); }
   .faq .question-title {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .faq button:hover {
+    background-color: transparent;
+    color: #5368df; } }
 .contact {
   background-color: #5368df;
   padding: 4rem 1.5rem;

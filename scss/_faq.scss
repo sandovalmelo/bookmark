@@ -58,7 +58,7 @@
 
 	button {
 		background-color: $soft-blue;
-		border: none;
+		border: solid 2px $soft-blue;
 		height: 2.75rem;
 		width: 6rem;
 		border-radius: 4px;
@@ -83,8 +83,25 @@
 			margin-right: auto;
 		}
 
+		.question:hover {
+			cursor: pointer;
+		}
+
+		.question:hover .question-title {
+			color: $soft-red;
+		}
+
+		.question:first-of-type {
+			border-top: solid 1px $gray-opacity;
+		}
+
 		.question-title {
 			font-size: 1.1rem;
+		}
+
+		button:hover {
+			background-color: transparent;
+			color: $soft-blue;
 		}
 	}
 }
