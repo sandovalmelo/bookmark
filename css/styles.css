@@ -163,11 +163,13 @@ button {
     border-radius: 4px; }
   .hero .chrome-btn {
     color: white;
-    background-color: #5368df; }
+    background-color: #5368df;
+    border: 2px solid #5368df; }
   .hero .firefox-btn {
     color: #9194a1;
     background-color: whitesmoke;
-    box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, 0.1);
+    border: 2px solid whitesmoke; }
 
 @media (min-width: 900px) {
   .hero {
@@ -193,7 +195,13 @@ button {
       max-width: 28rem;
       font-size: 1rem; }
     .hero-btn {
-      width: 10rem; } }
+      width: 10rem; }
+    .hero .chrome-btn:hover {
+      color: #5368df;
+      background-color: transparent; }
+    .hero .firefox-btn:hover {
+      background-color: transparent;
+      border: 2px solid #9194a1; } }
 .features {
   margin-bottom: 6rem; }
   .features-content {

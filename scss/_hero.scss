@@ -54,12 +54,14 @@
 	.chrome-btn {
 		color: $white;
 		background-color: $soft-blue;
+		border: 2px solid $soft-blue;
 	}
 
 	.firefox-btn {
 		color: $grayish-blue;
 		background-color: $soft-grey;
 		box-shadow: $shadow;
+		border: 2px solid $soft-grey;
 	}
 }
 
@@ -114,6 +116,20 @@
 
 		&-btn {
 			width: 10rem;
+		}
+
+		.chrome-btn {
+			&:hover {
+				color: $soft-blue;
+				background-color: transparent;
+			}
+		}
+
+		.firefox-btn {
+			&:hover {
+				background-color: transparent;
+				border: 2px solid $grayish-blue;
+			}
 		}
 	}
 }
