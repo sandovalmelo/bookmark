@@ -82,6 +82,7 @@
 		color: $white;
 		font-weight: 500;
 		background-color: $soft-red;
+		border: solid 2px $soft-red;
 	}
 }
 
@@ -117,6 +118,11 @@
 		button {
 			display: inline-block;
 			max-width: 120px;
+
+			&:hover {
+				color: $soft-red;
+				background-color: $white;
+			}
 		}
 	}
 }

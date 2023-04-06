@@ -480,7 +480,8 @@ button {
   .contact button {
     color: white;
     font-weight: 500;
-    background-color: #fa5757; }
+    background-color: #fa5757;
+    border: solid 2px #fa5757; }
 
 @media (min-width: 900px) {
   .contact-title {
@@ -504,7 +505,10 @@ button {
       border-bottom-right-radius: 4px; }
   .contact button {
     display: inline-block;
-    max-width: 120px; } }
+    max-width: 120px; }
+    .contact button:hover {
+      color: #fa5757;
+      background-color: white; } }
 .footer {
   padding: 4rem 1.5rem;
   background-color: #252b46;
