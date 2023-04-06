@@ -6,7 +6,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Rubik", sans-serif; }
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth; }
 
 a {
   text-decoration: none;
@@ -531,8 +532,7 @@ button {
       fill: white; }
   .footer button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 2rem;
     right: 2rem;
     background-color: #5368df;
     border: solid 2px #5368df;
@@ -559,6 +559,10 @@ button {
       margin-left: auto; }
       .footer-social svg:hover {
         fill: #fa5757;
-        cursor: pointer; } }
+        cursor: pointer; }
+    .footer button {
+      top: 50%;
+      transform: translateY(-50%);
+      bottom: auto; } }
 
 /*# sourceMappingURL=styles.css.map */

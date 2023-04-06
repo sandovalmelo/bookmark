@@ -27,8 +27,7 @@
 
 	button {
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
+		bottom: 2rem;
 		right: 2rem;
 		background-color: $soft-blue;
 		border: solid 2px $soft-blue;
@@ -67,6 +66,12 @@
 				fill: $soft-red;
 				cursor: pointer;
 			}
+		}
+
+		button {
+			top: 50%;
+			transform: translateY(-50%);
+			bottom: auto;
 		}
 	}
 }

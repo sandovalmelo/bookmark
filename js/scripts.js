@@ -90,3 +90,9 @@ contactForm.addEventListener("submit", (event) => {
 		}, 5000);
 	}
 });
+
+// scroll to top
+const scrollToTop = document.getElementById("scroll-to-top");
+scrollToTop.addEventListener("click", () => {
+	window.scrollTo({ top: 0, behavior: "smooth" });
+});
