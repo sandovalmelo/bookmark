@@ -40,7 +40,7 @@
 	}
 
 	button {
-		border: none;
+		border: solid 2px $soft-blue;
 		background-color: $soft-blue;
 		width: 100%;
 		color: $white;
@@ -74,6 +74,13 @@
 
 			.browser-card:nth-of-type(3) {
 				margin-top: 10rem;
+			}
+		}
+
+		button {
+			&:hover {
+				background-color: transparent;
+				color: $soft-blue;
 			}
 		}
 	}

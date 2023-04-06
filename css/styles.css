@@ -329,7 +329,7 @@ button {
     .download .browser-card p {
       margin-bottom: 3rem; }
   .download button {
-    border: none;
+    border: solid 2px #5368df;
     background-color: #5368df;
     width: 100%;
     color: white;
@@ -354,7 +354,10 @@ button {
     .download-browsers .browser-card:nth-of-type(2) {
       margin-top: 5rem; }
     .download-browsers .browser-card:nth-of-type(3) {
-      margin-top: 10rem; } }
+      margin-top: 10rem; }
+  .download button:hover {
+    background-color: transparent;
+    color: #5368df; } }
 .faq {
   padding: 0 1.5rem;
   margin-bottom: 4rem; }
