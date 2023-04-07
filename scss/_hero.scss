@@ -68,7 +68,8 @@
 
 @media (min-width: 900px) {
 	.hero {
-		height: calc(100vh - 104px);
+		margin-bottom: 6rem;
+		overflow-x: hidden;
 
 		&-container {
 			display: grid;
@@ -96,7 +97,6 @@
 
 		&-content {
 			text-align: left;
-			// grid-column: 1 / 2;
 			grid-column: 2 / 3;
 			grid-row: 1 / 2;
 			align-self: center;
