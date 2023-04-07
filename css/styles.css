@@ -266,7 +266,7 @@ button {
     .features-image:before {
       content: "";
       display: block;
-      width: 50%;
+      width: 30%;
       height: 88%;
       background-color: white;
       z-index: 40;
